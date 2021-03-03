@@ -5,6 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/ivProfile"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="/@yaboi" />
+
     <ImageView
         android:id="@+id/ivProfile"
         android:layout_width="50dp"
@@ -18,15 +31,15 @@
 
     <TextView
         android:id="@+id/tvHandle"
-        android:layout_width="wrap_content"
+        android:layout_width="73dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="28dp"
         android:layout_toEndOf="@+id/ivProfile"
         android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textStyle="normal"
         tools:text="/@yaboi" />
 
     <TextView
@@ -39,4 +52,17 @@
         android:textColor="#000000"
         android:textStyle="bold"
         tools:text="Hey guys! I feel SO sorry for those of you who have to abbreviate tweets because you only have 140 characters. Soooooooo lame! Anyway, what's everyone doing today? I'm just type-type-typing away! SO many characters! Talk to you soon. #blessed #280characters #abcdefg Hey guys! I feel SO sorry for those of you who have to abbreviate tweets because you only have 140 characters. Soooooooo lame! Anyway, what's everyone doing today? I'm just type-type-typing away! SO many characters! Talk to you soon. #blessed #280characters #abcdefg" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/tvTweet"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
 </RelativeLayout>

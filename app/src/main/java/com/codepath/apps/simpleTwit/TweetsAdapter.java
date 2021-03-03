@@ -55,27 +55,31 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         notifyDataSetChanged();
     }
 
-    //for each row, inflate layout
 
-    //bind value based on position of element
 
     //define a viewholder
     public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView profileImage;
         TextView body;
         TextView handle;
+        TextView name;
+        TextView timestamp;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             profileImage = itemView.findViewById(R.id.ivProfile);
             body = itemView.findViewById(R.id.tvTweet);
             handle = itemView.findViewById(R.id.tvHandle);
-
+            name = itemView.findViewById(R.id.tvName);
+            timestamp = itemView.findViewById(R.id.timestamp);
         }
 
         public void bind(Tweet tweet) {
             body.setText(tweet.body);
             handle.setText(tweet.user.handle);
             Glide.with(context).load(tweet.user.imageUrl).into(profileImage);
+            name.setText(tweet.user.name);
+            timestamp.setText(TimeFormatter.getTimeDifference(tweet.createdAt));
+
         }
     }
 }
