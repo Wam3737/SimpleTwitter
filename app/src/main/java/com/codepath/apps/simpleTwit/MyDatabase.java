@@ -1,10 +1,10 @@
-package com.codepath.apps.restclienttemplate;
+package com.codepath.apps.simpleTwit;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
-import com.codepath.apps.restclienttemplate.models.SampleModel;
-import com.codepath.apps.restclienttemplate.models.SampleModelDao;
+import com.codepath.apps.simpleTwit.models.SampleModel;
+import com.codepath.apps.simpleTwit.models.SampleModelDao;
 
 @Database(entities={SampleModel.class}, version=1)
 public abstract class MyDatabase extends RoomDatabase {
